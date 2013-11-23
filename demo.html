@@ -1,0 +1,172 @@
+<!-- By http://jquery-manual.blogspot.com -->
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title>sorTable Jquery</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="sortTable.js"></script>
+
+<script>
+$(function(){
+
+$("#btn-1").on("click", function(){
+$("#table1").sortTable("number", {column: 1, reverse: false});
+});
+
+$("#btn-2").on("click", function(){
+$("#table2").sortTable("letter", {column: 2, reverse: false});
+});
+
+$("#btn-3").on("click", function(){
+$("#table3").sortTable("both", {column: 1, reverse: false});
+});
+
+});
+</script>
+
+ <style>
+ @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+ 
+ body{
+ font-family: 'Ubuntu Mono', sans-serif;
+ background: #DEE3F0;
+ }
+ 
+ #table1, #table2,  #table3
+ {
+ background: #ffffff;
+ border-collapse: collapse; 
+ border: 1px solid #DEE3F0;
+ border-radius: 4px;
+ padding:10px;
+ }
+
+ #table1 tr, #table2 tr,  #table3 tr {
+    border-bottom: 1px solid #DEE3F0;
+}
+ 
+ #table1 tr td, #table2 tr td, #table3 tr td
+ {
+ padding: 10px;
+ margin: 0;
+ text-align: center;
+ }
+ 
+ pre{
+ background: #FFFFFF;
+ padding: 10px;
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <h1>SortTable Jquery</h1>
+ <h3>By <a href="http://jquery-manual.blogspot.com" target="_blank">http://jquery-manual.blogspot.com</a></h3>
+ 
+ <a href="https://github.com/ManuDavila/sortTable" target="_blank">Descargar en GITHUB</a>
+ 
+<p>La función sortTable es una función que permite ordenar las filas de una tabla ascendente o descendentemente a través del número de 
+la columna indicada, si no se indica nada se ordenará a partir de la primera columna de la tabla.</p>
+<p>
+El primer parámetro de la función acepta uno de los siguientes valores:
+<ul>
+<li><strong>number</strong>: Ordena la columna a partir de números.</li>
+<li><strong>letter</strong>: Ordena la columna a partir de letras, incluyendo caracteres latinos.</li>
+<li><strong>both</strong>: Ordena la columna a partir de letras y números.</li>
+</ul>
+<br />
+El segundo parámetro(opcional) contiene las siguientes opciones:
+<ul>
+<li><strong>reverse</strong>: <i>false | true</i> . Por defecto se encuentra en false, indica si el orden es ascendente o descendente.</li>
+<li><strong>column</strong>: <i>int</i> . El número de la columna que será la encargada de ordenar las filas. Por defecto su valor es 1, la primera columna.</li>
+</ul>
+</p>
+<center>
+
+<table>
+<tr>
+<td>
+<table id="table1">
+<tr><th>ID</th><th>VALOR</th></tr>
+<tr><td>99</td><td>noventa y nueve</td></tr>
+<tr><td>1200</td><td>mil doscientos</td></tr>
+<tr><td>116</td><td>ciento dieciseis</td></tr>
+<tr><td>220</td><td>doscientos veinte</td></tr>
+<tr><td>900</td><td>novecientos</td></tr>
+<tr><td>23</td><td>veintitrés</td></tr>
+<tr><td>150</td><td>ciento cincuenta</td></tr>
+</table>
+</td>
+<td>
+<button type="button" id="btn-1">DEMO 1</button>
+<pre>
+$("#btn-1").click(function(){
+$("#table1").sortTable("number", {column: 1, reverse: false});
+});
+</pre>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<table>
+<tr>
+<td>
+<table id="table2">
+<tr><th>id</th><th>Nombre</th><th>Apellido</th></tr>
+<tr><td>1</td><td>Pedro</td><td>García</td></tr>
+<tr><td>2</td><td>José</td><td>Redondo</td></tr>
+<tr><td>3</td><td>Alberto</td><td>Márquez</td></tr>
+<tr><td>4</td><td>Diego</td><td>Rodríguez</td></tr>
+<tr><td>5</td><td>Juan</td><td>Guardado</td></tr>
+<tr><td>6</td><td>Miguel</td><td>Fenández</td></tr>
+<tr><td>7</td><td>Antonio</td><td>González</td></tr>
+<tr><td>8</td><td>Álvaro</td><td>Puerta</td></tr>
+</table>
+</td>
+<td>
+<button type="button" id="btn-2">DEMO 2</button>
+<pre>
+$("#btn-2").click(function(){
+$("#table2").sortTable("letter", {column: 2, reverse: false});
+});
+</pre>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<table>
+<tr>
+<td>
+<table id="table3">
+<tr><th>SRC</th></tr>
+<tr><td>imagen-1.jpg</td></tr>
+<tr><td>imagen-23.jpg</td></tr>
+<tr><td>imagen-40.jpg</td></tr>
+<tr><td>imagen-33.jpg</td></tr>
+<tr><td>imagen-28.jpg</td></tr>
+<tr><td>imagen-59.jpg</td></tr>
+<tr><td>imagen-70.jpg</td></tr>
+<tr><td>imagen-12.jpg</td></tr>
+</table>
+</td>
+<td>
+<button type="button" id="btn-3">DEMO 3</button>
+<pre>
+$("#btn-3").on("click", function(){
+$("#table3").sortTable("both", {column: 1, reverse: false});
+});
+</pre>
+</td>
+</tr>
+</table>
+
+</center>
+
+<br /><br />
+
+</body>
+</html>
