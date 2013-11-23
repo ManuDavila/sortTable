@@ -3,6 +3,8 @@ sortTable
 
  <h1>SortTable Jquery</h1>
  <h3>By <a href="http://jquery-manual.blogspot.com" target="_blank">http://jquery-manual.blogspot.com</a></h3>
+ <br />
+ <a href="http://jquery-manual.blogspot.com.es/2013/11/sorttable-como-ordenar-las-filas-de-una.html" target="_blank">DEMO sortTable</a>
  
 <p>La función sortTable es una función Jquery que permite ordenar las filas de una tabla ascendente o descendentemente a través de la 
 la columna indicada, si no se indica nada se ordenará a partir de la primera columna de la tabla.</p>
