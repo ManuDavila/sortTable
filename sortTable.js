@@ -22,7 +22,6 @@ row[i][index] = $(this).text();
 });
 });
 
-//Se elimina la primera fila que es th
 row.shift();
 
 columna = defaults.column;
@@ -33,8 +32,6 @@ for (x=0; x <row.length; x++)
 {
 array_columna[x] = row[x][columna];
 }
-
-condicion = [0, 1, 2, 3, 4, 6, 7, 8, 9];
 
 if (type == "number")
 {
