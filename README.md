@@ -5,7 +5,7 @@ sortTable
  <h3>By <a href="http://jquery-manual.blogspot.com" target="_blank">http://jquery-manual.blogspot.com</a></h3>
  <br />
  
-<a href="http://jquery-manual.blogspot.com/2013/11/sorttable-how-to-sort-rows-of-table.html" target="_blank">DEMO sortTable</a>
+<strong><a href="http://jquery-manual.blogspot.com/2013/11/sorttable-how-to-sort-rows-of-table.html" target="_blank">DEMO sortTable</a></strong>
 
 <div style="text-align: justify;">
 The sortTable function allow sort the rows of a table ASC or DESC through one column number, if not selected, The table is sorted from the first column.</div>
@@ -27,7 +27,7 @@ The second parameter (optional) contains the following options:
  
  <hr />
  
- <a href="http://jquery-manual.blogspot.com.es/2013/11/sorttable-como-ordenar-las-filas-de-una.html" target="_blank">DEMO sortTable</a>
+<strong><a href="http://jquery-manual.blogspot.com.es/2013/11/sorttable-como-ordenar-las-filas-de-una.html" target="_blank">DEMO sortTable</a></strong>
  
 <p>La función sortTable permite ordenar las filas de una tabla ascendente o descendentemente a través de la 
 la columna indicada, si no se indica nada se ordenará a partir de la primera columna de la tabla.</p>
@@ -45,4 +45,3 @@ El segundo parámetro(opcional) contiene las siguientes opciones:
 <li><strong>column</strong>: <i>int</i> . El número de la columna que será la encargada de ordenar las filas. Por defecto su valor es 1, la primera columna.</li>
 </ul>
 </p>
-
