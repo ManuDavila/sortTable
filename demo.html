@@ -60,6 +60,7 @@ $("#table3").sortTable("both", {column: 1, reverse: false});
  </head>
  <body>
  
+ <div id="my_div">
  <h1>SortTable Jquery</h1>
  <h3>By <a href="http://jquery-manual.blogspot.com" target="_blank">http://jquery-manual.blogspot.com</a></h3>
  
@@ -99,7 +100,7 @@ El segundo parámetro(opcional) contiene las siguientes opciones:
 </td>
 <td>
 <button type="button" id="btn-1">DEMO 1</button>
-<pre>
+<pre class="brush: js">
 $("#btn-1").click(function(){
 $("#table1").sortTable("number", {column: 1, reverse: false});
 });
@@ -127,7 +128,7 @@ $("#table1").sortTable("number", {column: 1, reverse: false});
 </td>
 <td>
 <button type="button" id="btn-2">DEMO 2</button>
-<pre>
+<pre class="brush: js">
 $("#btn-2").click(function(){
 $("#table2").sortTable("letter", {column: 2, reverse: false});
 });
@@ -143,19 +144,19 @@ $("#table2").sortTable("letter", {column: 2, reverse: false});
 <td>
 <table id="table3">
 <tr><th>SRC</th></tr>
-<tr><td>imagen-1.jpg</td></tr>
+<tr><td>imagen-3.jpg</td></tr>
 <tr><td>imagen-23.jpg</td></tr>
 <tr><td>imagen-40.jpg</td></tr>
-<tr><td>imagen-33.jpg</td></tr>
+<tr><td>imagen-1.jpg</td></tr>
 <tr><td>imagen-28.jpg</td></tr>
-<tr><td>imagen-59.jpg</td></tr>
+<tr><td>imagen-9.jpg</td></tr>
 <tr><td>imagen-70.jpg</td></tr>
 <tr><td>imagen-12.jpg</td></tr>
 </table>
 </td>
 <td>
 <button type="button" id="btn-3">DEMO 3</button>
-<pre>
+<pre class="brush: js">
 $("#btn-3").on("click", function(){
 $("#table3").sortTable("both", {column: 1, reverse: false});
 });
@@ -166,7 +167,7 @@ $("#table3").sortTable("both", {column: 1, reverse: false});
 
 </center>
 
-<br /><br />
-
+<br /><br /><br /><br />
+</div>
 </body>
 </html>
